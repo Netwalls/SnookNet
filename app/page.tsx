@@ -10,10 +10,11 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/background.svg')] bg-no-repeat bg-cover">
       <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex items-center gap-4">
         <div className="h-[40px] sm:h-[62px] w-[50px] sm:w-[72px] bg-[#222C38] transform -skew-x-12"></div>
-
-       
-       <WalletConnectButton/>
-
+        <button className="relative bg-white transform -skew-x-12 px-4 sm:px-8 h-[40px] sm:h-[62px]">
+          <span className="text-[#222C38] text-sm sm:text-base font-bold transform skew-x-12">
+            CONNECT WALET
+          </span>
+        </button>
       </div>
 
       <main className="flex flex-col gap-4 row-start-2 items-center w-full mt-12 sm:mt-20">
