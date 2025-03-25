@@ -9,7 +9,7 @@ export default function Home() {
         <div className="h-[40px] sm:h-[62px] w-[50px] sm:w-[72px] bg-[#222C38] transform -skew-x-12"></div>
         <button className="relative bg-white transform -skew-x-12 px-4 sm:px-8 h-[40px] sm:h-[62px]">
           <span className="text-[#222C38] text-sm sm:text-base font-bold transform skew-x-12">
-            CONNECT WALLET
+            CONNECT WALET
           </span>
         </button>
       </div>
