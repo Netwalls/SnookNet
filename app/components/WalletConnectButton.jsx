@@ -13,6 +13,11 @@ function WalletConnectButton() {
     setWalletAddress("");
     setWalletName("");
   };
+
+
+  const truncatedAdress =  walletAddress.slice(0, 5) + "..." + walletAddress.slice(10, 15) +  walletAddress.slice(20, 25)
+
+
   const handleConnect = async () => {
     try {
       const getWallet = await connect({
@@ -36,17 +41,24 @@ function WalletConnectButton() {
   return (
     <div>
       {!walletAddress && (
-        <button className="cursor-pointer bg-blue-600" onClick={handleConnect}>Connect Wallet</button>
+        <button onClick={handleConnect} className="relative bg-white transform -skew-x-12 cursor-pointer px-4 sm:px-8 h-[40px] sm:h-[62px]">
+        <span className="text-[#222C38] text-sm sm:text-base font-bold transform skew-x-12">
+          CONNECT WALLET
+        </span>
+      </button>
       )}
       {walletAddress && (
         <div>
-          <button onClick={handleDisconnect}>Disconnect Wallet</button>
-          <div>
-            <p>Wallet Name: {walletName}</p>
-            <p>Wallet Address: {walletAddress}</p>
-          </div>
+          <button className="cursor-pointer flex flex-col items-center justify-center " onClick={handleDisconnect}>
+          <span>  Disconnect Wallet </span>
+
+            <p> {truncatedAdress} </p>
+            </button>
         </div>
       )}
+
+
+
     </div>
   );
 }
