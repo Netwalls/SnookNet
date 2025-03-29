@@ -45,7 +45,7 @@ const JoinGame = () => {
 					<Image src="/card.svg" alt="join card" width={300} height={500} />
 				</div>
 			</div>
-			<GameIsStartingModal isOpen={true}/>
+			<GameIsStartingModal isOpen={false}/>
 		</section>
 	);
 };
