@@ -17,12 +17,12 @@ const GameIsStartingModal = ({ isOpen }: { isOpen: boolean }) => {
 				style={{
 					...borderStyle,
 					background:
-						"linear-gradient(90deg, rgba(59, 99, 108, 0) 1.5%, #3d213892 60.42%, rgba(59, 99, 108, 0) 86.39%)",
+						"linear-gradient(90deg, rgba(59, 99, 108, 0) 1.5%, #3d2138ab 60.42%, rgba(59, 99, 108, 0) 86.39%)",
 				}}
 			>
-				<p className="text-[32px] text-[#F3F5FF] font-black text-center">
+				<h1 className="text-[32px] text-[#F3F5FF] font-black text-center">
 					GAME IS STARTING...
-				</p>
+				</h1>
 			</div>
 		</div>
 	);

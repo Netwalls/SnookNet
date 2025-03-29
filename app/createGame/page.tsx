@@ -1,6 +1,8 @@
 
+"use client"
 
 import React, { useState, useEffect } from "react";
+import GameIsStartingModal from "../components/GameIsStartingModal";
 
 
 import QRCode from "react-qr-code";
@@ -67,6 +69,7 @@ const GameCreationPage: React.FC<GameCreationPageProps> = ({
         </div>
       </div>
     </div>
+    <GameIsStartingModal isOpen={true}/>
   </div>
   );
 };

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import GameIsStartingModal from "../components/GameIsStartingModal";
 
 const JoinGame = () => {
 	return (
@@ -45,7 +44,6 @@ const JoinGame = () => {
 					<Image src="/card.svg" alt="join card" width={300} height={500} />
 				</div>
 			</div>
-			<GameIsStartingModal isOpen={false}/>
 		</section>
 	);
 };
