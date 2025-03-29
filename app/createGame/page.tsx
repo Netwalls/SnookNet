@@ -69,7 +69,7 @@ const GameCreationPage: React.FC<GameCreationPageProps> = ({
         </div>
       </div>
     </div>
-    <GameIsStartingModal isOpen={true}/>
+    <GameIsStartingModal isOpen={false}/>
   </div>
   );
 };
