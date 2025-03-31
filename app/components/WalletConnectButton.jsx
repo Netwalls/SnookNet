@@ -7,7 +7,7 @@ import { encode } from "starknet";
 function WalletConnectButton() {
   const [walletAddress, setWalletAddress] = useState("");
   const [walletName, setWalletName] = useState("");
-  const [wallet, setWallet] = useState<any>("");
+  const [wallet, setWallet] = useState("");
 
   const handleDisconnect = async () => {
     await disconnect({ clearLastWallet: true });

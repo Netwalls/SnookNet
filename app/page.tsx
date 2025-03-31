@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import WalletConnectButton from './components/WalletConnectButton';
+// import WalletConnectButton from './components/WalletConnectButton';
 
 
 export default function Home() {
