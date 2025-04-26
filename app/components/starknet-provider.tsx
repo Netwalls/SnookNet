@@ -45,6 +45,7 @@ const StarknetProvider: React.FC<StarknetProviderProps> = ({ children }) => {
       provider={publicProvider()}
       connectors={connectors as Connector[]}
       explorer={voyager}
+      autoConnect={true}
     >
       {children}
     </StarknetConfig>
