@@ -1,5 +1,5 @@
 import { Bowlby_One_SC } from "next/font/google";
-
+import Header from "../components/Header";
 const bowlby = Bowlby_One_SC({
   weight: "400",
   subsets: ["latin"],
@@ -11,14 +11,7 @@ export default function Profile() {
     <div
       className={`${bowlby.variable} flex flex-col items-center justify-center min-h-screen p-8 pb-20 sm:p-20 bg-[url('/background.svg')] bg-no-repeat bg-cover`}
     >
-      <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex items-center gap-4">
-        <button className="relative bg-[#222C38] transform -skew-x-12 px-4 sm:px-8 h-[40px] sm:h-[62px]">
-          <span className="text-[#F3F5FF] text-sm sm:text-base font-bold transform skew-x-12">
-            CONNECT WALLET
-          </span>
-        </button>
-      </div>
-
+      <Header />
       <main className="w-full max-w-4xl flex flex-col mx-auto">
         <h1 className="text-[32px] font-bold self-start ml-6">PROFILE</h1>
 

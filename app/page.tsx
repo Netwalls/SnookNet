@@ -1,17 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { WalletConnectorModal } from "./components/WalletConnector";
+import Header from "./components/Header";
+
+// import WalletConnectButton from './components/WalletConnectButton';
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/background.svg')] bg-no-repeat bg-cover">
-      <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex items-center gap-4">
-        <div className="h-[40px] sm:h-[62px] w-[50px] sm:w-[72px] bg-[#222C38] transform -skew-x-12"></div>
-        <WalletConnectorModal />
-      </div>
-
+      <Header />
       <main className="flex flex-col gap-4 row-start-2 items-center w-full mt-12 sm:mt-20">
         <div className="flex flex-col gap-4 w-full items-center sm:items-start sm:ml-8">
           <Image
