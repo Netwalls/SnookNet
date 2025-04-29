@@ -1,16 +1,13 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
 
 // import WalletConnectButton from './components/WalletConnectButton';
 
-
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('/background.svg')] bg-no-repeat bg-cover">
       <Header />
-
       <main className="flex flex-col gap-4 row-start-2 items-center w-full mt-12 sm:mt-20">
         <div className="flex flex-col gap-4 w-full items-center sm:items-start sm:ml-8">
           <Image
@@ -88,10 +85,7 @@ export default function Home() {
                       PLAY GAMES
                     </h3>
                     <p className="text-xs sm:text-sm max-w-[250px]">
-
-
-                      Choose variety of ways SnookNet 
-
+                      Choose variety of ways SnookNet
                     </p>
                   </div>
                 </div>

@@ -9,15 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@starknet-react/core": "^3.7.4",
     "@types/qrcode.react": "^1.0.5",
+    "get-starknet": "^3.3.0",
     "next": "15.2.1",
     "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-qr-code": "^2.0.15",
-    "get-starknet": "^3.3.0",
-    "starknet": "^6.11.0"
-
+    "starknet": "^6.11.0",
+    "starknetkit": "^2.10.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

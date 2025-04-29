@@ -1,8 +1,9 @@
 "use client";
 import { useAudioCustom } from "./AudioProvider";
-import UNMUTE from "./assets/images/unmute.png";
-import MUTED from "./assets/images/muted.png";
+import UNMUTE from "@/public/assets/images/unmute.png";
+import MUTED from "@/public/assets/images/muted.png";
 import Image from "next/image";
+import { WalletConnectorModal } from "./WalletConnector";
 
 export default function Header() {
   const { playBackgroundAudio, pauseBackgroundAudio, playingBackgroundAudio } =
@@ -34,14 +35,7 @@ export default function Header() {
             </button>
           )}
         </div>
-        <button
-          type="button"
-          className="relative bg-white transform -skew-x-12 px-4 sm:px-8 h-[40px] sm:h-[62px]"
-        >
-          <span className="text-[#222C38] text-sm sm:text-base font-bold transform skew-x-12">
-            CONNECT WALET
-          </span>
-        </button>
+        <WalletConnectorModal />
       </div>
     </>
   );
