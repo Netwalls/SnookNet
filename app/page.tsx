@@ -80,14 +80,15 @@ export default function Home() {
                     className="max-w-full w-[300px] sm:w-auto"
                     priority
                   />
-                  <div className="absolute bottom-4 left-8 text-white">
+                  <Link href="/gameMode" 
+                  className="absolute bottom-4 left-8 text-white">
                     <h3 className="font-bold text-lg sm:text-xl mb-1">
                       PLAY GAMES
                     </h3>
                     <p className="text-xs sm:text-sm max-w-[250px]">
                       Choose variety of ways SnookNet
                     </p>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="relative -ml-6 sm:-ml-6">
