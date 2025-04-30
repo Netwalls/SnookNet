@@ -12,6 +12,7 @@
     "@starknet-react/core": "^3.7.4",
     "@types/qrcode.react": "^1.0.5",
     "get-starknet": "^3.3.0",
+    "lucide-react": "^0.503.0",
     "next": "15.2.1",
     "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
