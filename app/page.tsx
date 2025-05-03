@@ -23,10 +23,10 @@ export default function Home() {
             <div className="flex flex-col gap-1">
               <Link
                 href="/profile"
-                className="self-center sm:self-start sm:ml-2"
+                className="self-center sm:self-start"
               >
-                <div className="bg-[#222C38] w-[149.5px] h-[107px] flex flex-col justify-end items-center pb-3 transform -skew-x-6">
-                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform skew-x-6">
+                <div className="bg-[#222C38] w-[149.5px] h-[105px] flex flex-col justify-end items-center pb-3 transform">
+                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform ">
                     Profile
                   </div>
                 </div>
@@ -34,10 +34,10 @@ export default function Home() {
 
               <Link
                 href="/wallet"
-                className="self-center sm:self-start sm:-ml-2"
+                className="self-center sm:self-start mb-1"
               >
-                <div className="bg-[#222C38] w-[149.5px] h-[107px] flex flex-col justify-end items-center pb-3 transform -skew-x-6">
-                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform skew-x-6">
+                <div className="bg-[#222C38] w-[149.5px] h-[104px] flex flex-col justify-end items-center pb-3 transform">
+                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform">
                     Wallet
                   </div>
                 </div>
@@ -45,10 +45,10 @@ export default function Home() {
 
               <Link
                 href="/settings"
-                className="self-center sm:self-start sm:-ml-6"
+                className="self-center sm:self-start"
               >
-                <div className="bg-[#222C38] w-[149.5px] h-[107px] flex flex-col justify-end items-center pb-3 transform -skew-x-6">
-                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform skew-x-6">
+                <div className="bg-[#222C38] w-[149.5px] h-[105px] flex flex-col justify-end items-center pb-3 transform">
+                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform">
                     Settings
                   </div>
                 </div>
@@ -56,17 +56,17 @@ export default function Home() {
 
               <Link
                 href="/socials"
-                className="self-center sm:self-start sm:-ml-8"
+                className="self-center sm:self-start"
               >
-                <div className="bg-[#222C38] w-[149.5px] h-[107px] flex flex-col justify-end items-center pb-3 transform -skew-x-6">
-                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform skew-x-6">
+                <div className="bg-[#222C38] w-[149.5px] h-[105px] flex flex-col justify-end items-center pb-3 transform">
+                  <div className="text-[#F3F5FF] font-bold tracking-wide uppercase transform">
                     Socials
                   </div>
                 </div>
               </Link>
             </div>
 
-            <div className="flex flex-col gap-2 items-center sm:items-start -ml-4 sm:-ml-4">
+            <div className="flex flex-col gap-2.5 items-center sm:items-start ">
               <div
                 className="flex flex-col sm:flex-row gap-2 sm:gap-0"
                 style={{ gap: "2px" }}
@@ -91,7 +91,7 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <div className="relative -ml-6 sm:-ml-6">
+                <div className="relative ml-2">
                   <Image
                     src="/pool table orange.svg"
                     alt="Pool Table Orange"
@@ -112,12 +112,12 @@ export default function Home() {
               </div>
 
               <div
-                className="flex flex-col sm:flex-row gap-2 sm:gap-0 sm:-ml-6"
+                className="flex flex-col sm:flex-row gap-2 sm:gap-0 "
                 style={{ gap: "2px" }}
               >
                 <div className="relative">
                   <Image
-                    src="/pool table light green.svg"
+                    src="/pool table yellow.svg"
                     alt="Pool Table Light Green"
                     width={509.5}
                     height={217}
@@ -134,9 +134,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="relative -ml-6 sm:-ml-6">
+                <div className="relative ml-2 ">
                   <Image
-                    src="/pool table green.svg"
+                    src="/pool table green.svg" 
                     alt="Pool Table Green"
                     width={509.5}
                     height={217}

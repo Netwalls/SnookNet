@@ -49,9 +49,9 @@ function WalletConnectButton() {
       {!walletAddress && (
         <button
           onClick={handleConnect}
-          className="relative bg-white transform -skew-x-12 cursor-pointer px-4 sm:px-8 h-[40px] sm:h-[62px]"
+          className="relative bg-white transform cursor-pointer px-4 sm:px-8 h-[40px] sm:h-[62px]"
         >
-          <span className="text-[#222C38] text-sm sm:text-base font-bold transform skew-x-12">
+          <span className="text-[#222C38] text-sm sm:text-base font-bold transform">
             CONNECT WALLET
           </span>
         </button>
