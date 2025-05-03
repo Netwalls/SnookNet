@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <>
       <div className="absolute top-4 right-4 sm:top-8 sm:right-8 flex items-center gap-4">
-        <div className="h-[40px] sm:h-[62px] w-[50px] sm:w-[72px] bg-[#222C38] transform -skew-x-12 flex justify-center items-center">
+        <div className="h-[40px] sm:h-[62px] w-[50px] sm:w-[72px] bg-[#222C38] transform flex justify-center items-center">
           {!playingBackgroundAudio && (
             <button
               type="button"

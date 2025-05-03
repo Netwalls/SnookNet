@@ -34,14 +34,14 @@ const JoinGame = () => {
         <div className="flex flex-col gap-y-16">
           <h1 className="font-[family-name:var(--font-geist-sans)] font-extrabold text-3xl">ENTER GAME CODE</h1>
           <div className="flex gap-x-2  ">
-            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform -skew-x-8" />
-            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform -skew-x-8" />
-            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform -skew-x-8" />
-            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform -skew-x-8" />
+            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform" />
+            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform" />
+            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform" />
+            <input type="text" className="bg-[#222C38] border-[#696969] border-2 h-[4rem] w-[4rem] p-2  transform" />
           </div>
           <div>
-            <button className="relative   bg-[#222C38] transform -skew-x-12 cursor-pointer px-4 sm:px-8 h-[40px] sm:h-[62px]">
-              <span className=" text-sm text-white bg-[#FFA620] border sm:text-base font-bold transform skew-x-12">
+            <button className="relative   bg-[#222C38] transform cursor-pointer px-4 sm:px-8 h-[40px] sm:h-[62px]">
+              <span className=" text-sm text-white bg-[#FFA620] border sm:text-base font-bold transform">
                 JOIN GAME
               </span>
             </button>
