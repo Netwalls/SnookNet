@@ -1,6 +1,6 @@
 "use client";
 
-import { Lock } from "lucide-react";
+import LockIcon from "./lock-icon";
 
 interface BallGridProps {
   theme: "purple" | "green" | "gold";
@@ -27,45 +27,51 @@ export default function BallGrid({
   // Create an array of 8 balls (or more if needed)
   const balls = Array.from({ length: isGoldTheme ? 8 : 4 }, (_, i) => ({
     id: i,
-    locked: isGoldTheme && i > 3,
+    locked: isGoldTheme && i > 1,
   }));
 
   return (
-    <div className="grid grid-cols-4 gap-2 w-1/2">
-      {balls.map((ball) => (
-        <div
-          key={ball.id}
-          className={`relative aspect-squar border-2 h-[148px] w-[148px] ${
-            selectedBall === ball.id ? "border-white" : "border-gray-500"
-          } ${themeColors[theme]} cursor-pointer`}
-          onClick={() => !ball.locked && onSelectBall(ball.id)}
-        >
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-3/4 relative h-3/4 bg-black rounded-full flex items-center justify-center ">
+    <div className="grid grid-cols-4 gap-2 w-2/3 mt-10">
+      <>
+        {balls.map((ball) => (
+          <div key={ball.id} className="h-fit grid gap-1 max-w-[148px] w-full">
+            <div
+              className={`relative w-full border-2 h-[148px] ${
+                selectedBall === ball.id ? "border-white" : "border-gray-500"
+              } ${themeColors[theme]} cursor-pointer
+                `}
+              onClick={() => !ball.locked && onSelectBall(ball.id)}
+            >
               <div
-                className={`${
-                  theme === "purple"
-                    ? "bg-gradient-to-tr from-[#8654A5]/85"
-                      : theme === "green"
-                      ? "bg-gradient-to-tr from-[#3CE701]/85 to-[#000000]"
-                    : "bg-gradient-to-tr from-[#817A20]/85 to-[#000000]"
-                } absolute top-5 right-6 text-3xl -rotate-[60deg] bg-white w-1/3 h-1/3 bg- rounded-full flex items-center justify-center text-[#000000] font-bold`}
+                className={`absolute inset-0 flex items-center justify-center ${
+                  ball.locked ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
-                8
+                <div className="w-[82px] relative h-[82px] bg-black rounded-full flex items-center justify-center ">
+                  <div
+                    className={`${
+                      theme === "purple"
+                        ? "bg-gradient-to-tr from-[#8654A5]/85"
+                        : theme === "green"
+                        ? "bg-gradient-to-tr from-[#3CE701]/85 to-[#000000]"
+                        : "bg-gradient-to-tr from-[#817A20]/85 to-[#000000]"
+                    } absolute top-4 right-3 text-3xl -rotate-[50deg] bg-white w-1/3 h-1/3 bg- rounded-full flex items-center justify-center text-[#000000] font-bold`}
+                  >
+                    8
+                  </div>
+                </div>
               </div>
             </div>
+            {ball.locked && (
+              <button className="bg-[#222C38] border-2 py-2 border-[#696969]  w-full justify-center items-center flex gap-2">
+                <span>LOCKED</span>
+                <LockIcon />
+              </button>
+            )}
           </div>
-
-          {ball.locked && (
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-              <div className="flex flex-col items-center">
-                <Lock className="w-6 h-6 text-yellow-500" />
-                <span className="text-xs font-bold text-white">LOCKED</span>
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
+        ))}
+        {/* <button className="bg-[#222C38] w-full">LOCKED</button> */}
+      </>
     </div>
   );
 }

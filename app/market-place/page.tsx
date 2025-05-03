@@ -46,7 +46,7 @@ export default function MarketPlace() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-4xl aspect-[16/9] overflow-hidden">
+      <div className="relative w-full max-w-6xl overflow-hidden mt-10">
         <div className="relative z-10 w-full h-full flex flex-col p-4">
           {/* Navigation tabs */}
           <div className="flex justify-between mt-4 mb-6 space-x-2">
@@ -65,14 +65,14 @@ export default function MarketPlace() {
                 </button>
               ))}
             </div>
-            <div className="max-w-[250px]  mr-3">
+            <div className="max-w-[250px]">
               <button className="w-full px-8 py-2 font-bold text-sm bg-white text-black border border-white h-14">
                 TITLE OF SELECTION
               </button>
             </div>
           </div>
 
-          <div className="flex flex-1 gap-28">
+          <div className="flex justify-baseline gap-28">
             {/* Ball selection grid */}
             <BallGrid
               theme={selectedTheme}
